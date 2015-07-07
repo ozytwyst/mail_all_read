@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
+    <data>
   ##############################################################################
   #
   #   mail_all_read module for OpenERP, Mark all mails as 'Read'
@@ -21,7 +22,6 @@
   #   along with this program.  If not, see [http://www.gnu.org/licenses/].
   #
   ##############################################################################
-    <data>
     <record id="mail_all_read_wizard_view" model="ir.ui.view">
       <field name="name">mail_all_read.wizard.view</field>
       <field name="model">mail_all_read.wizard</field>
