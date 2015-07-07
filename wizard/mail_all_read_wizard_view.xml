@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  ##############################################################################
+  #
+  #   mail_all_read module for OpenERP, Mark all mails as 'Read'
+  #   Copyright (C) 2015 ozytwyst Julien Thomazeau [ozydev@julienthomazeau.fr]
+  #
+  #   This file is a part of mail_all_read
+  #
+  #   mail_all_read is free software: you can redistribute it and/or modify
+  #   it under the terms of the GNU Affero General Public License as published by
+  #   the Free Software Foundation, either version 3 of the License, or
+  #   (at your option) any later version.
+  #
+  #   mail_all_read is distributed in the hope that it will be useful,
+  #   but WITHOUT ANY WARRANTY; without even the implied warranty of
+  #   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  #   GNU Affero General Public License for more details.
+  #
+  #   You should have received a copy of the GNU Affero General Public License
+  #   along with this program.  If not, see [http://www.gnu.org/licenses/].
+  #
+  ##############################################################################
+    <data>
+    <record id="mail_all_read_wizard_view" model="ir.ui.view">
+      <field name="name">mail_all_read.wizard.view</field>
+      <field name="model">mail_all_read.wizard</field>
+      <field name="arch" type="xml">
+        <form string="Mark all mails as Read" version="7.0">
+          <p>If you click on Yes, all mails in your mailbox will be mark as "Read". Are you sure you want to do that ?</p>
+          <footer>
+            <button string="Cancel" class="" special="cancel"/>
+            <button name="mark_all_as_read" string="Yes" type="object" class="oe_highlight"/>
+          </footer>
+        </form>
+      </field>
+    </record>
+
+  </data>
+</openerp>
